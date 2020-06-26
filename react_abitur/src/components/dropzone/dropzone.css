@@ -1,0 +1,26 @@
+.dropzone {
+  width: 90%;
+  min-height: 80px;
+  margin: 80px auto 0;
+  background-color: #ececec;
+  border: dashed 5px #c1c1c1;
+
+  text-align: center;
+  font-size: 1.5rem;
+  color: #343434;
+}
+
+.dropzone-ul {
+  padding: 0;
+  margin: 0;
+}
+.dropzoneItem {
+  margin: 10px 0 0 0;
+  box-sizing: content-box;
+  list-style: none;
+  font-size: 1.2rem;
+  color: #343434;
+  background-color: #ececec;
+  border: solid 2px #c1c1c1;
+  padding: 10px;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="hidables nodisplay">
+      <div class="errorbox">
+        <div class="errorbox__content">
+          <p class="errorbox__text"></p>
+          <button class="button errorbox__close">
+            <i class="icon icon__close"></i>
+          </button>
+        </div>
+      </div>
+      <section class="popup popup__signup">
+        <div class="popup__inner">
+          <button class="popup__button_close"></button>
+          <div class="popup__container">
+            <div class="popup__content">
+              <h3 class="popup__title">Регистрация</h3>
+              <form class="popup__form" name="signup" method="POST">
+                <fieldset class="popup__fieldset">
+                  <label class="popup__label" for="signup_email">Email</label>
+                  <input
+                    class="popup__input"
+                    name="email"
+                    type="email"
+                    id="signup_email"
+                    placeholder="Введите почту"
+                    required
+                  />
+                  <span class="popup__error popup__error_email"></span>
+                  <label class="popup__label" for="signup_password"
+                    >Пароль</label
+                  >
+                  <input
+                    class="popup__input"
+                    name="password"
+                    type="password"
+                    id="signup_password"
+                    placeholder="Введите пароль"
+                    required
+                    minlength="8"
+                  />
+                  <span class="popup__error popup__error_password"></span>
+                  <label class="popup__label" for="signup_username">Имя</label>
+                  <input
+                    class="popup__input"
+                    name="username"
+                    name="name"
+                    id="signup_username"
+                    placeholder="Введите свое имя"
+                    required
+                    minlength="2"
+                  />
+                  <span class="popup__error popup__error_username"></span>
+                  <button
+                    class="button popup__button_submit"
+                    type="submit"
+                    disabled
+                  >
+                    Зарегистрироваться
+                  </button>
+                </fieldset>
+                <span class="popup__text"
+                  >Или <a class="link popup__link" href="#">Войти</a></span
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="popup popup__login">
+        <div class="popup__inner">
+          <button class="popup__button_close"></button>
+          <div class="popup__container">
+            <div class="popup__content">
+              <h3 class="popup__title">Вход</h3>
+              <form class="popup__form" name="login" method="POST">
+                <fieldset class="popup__fieldset">
+                  <label class="popup__label" for="login_email">Email</label>
+                  <input
+                    class="popup__input"
+                    name="email"
+                    type="email"
+                    id="login_email"
+                    placeholder="Введите почту"
+                    required
+                  />
+                  <span class="popup__error popup__error_email"></span>
+                  <label class="popup__label" for="login_password"
+                    >Пароль</label
+                  >
+                  <input
+                    class="popup__input"
+                    name="password"
+                    type="password"
+                    id="login_password"
+                    placeholder="Введите пароль"
+                    required
+                  />
+                  <span class="popup__error popup__error_password"></span>
+                  <button
+                    class="button popup__button_submit"
+                    type="submit"
+                    disabled
+                  >
+                    Войти
+                  </button>
+                </fieldset>
+                <span class="popup__text"
+                  >Или
+                  <a class="link popup__link" href="#"
+                    >Зарегестриуйтесь</a
+                  ></span
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="popup popup__message">
+        <div class="popup__inner">
+          <button class="popup__button_close"></button>
+          <div class="popup__container">
+            <div class="popup__content">
+              <h3 class="popup__title">Пользователь успешно зарегестирован!</h3>
+              <span class="popup__text_special">
+                <a class="link popup__link popup__link_special" href="#">
+                  Выполнить вход
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

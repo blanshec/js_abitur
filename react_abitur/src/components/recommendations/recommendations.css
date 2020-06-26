@@ -1,0 +1,128 @@
+.recommendations {
+}
+
+.rec__header {
+  font-size: 2.5rem;
+}
+.rec__container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.rec_text {
+  margin: 0;
+}
+
+.recommendation {
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 0 0;
+  min-height: 180px;
+}
+.recommendation__uni {
+  display: flex;
+  flex-direction: row;
+}
+.recommendation__logo {
+  width: 150px;
+  height: 100%;
+}
+.recommendation__info {
+  display: grid;
+  grid-template-areas: 'city cost' 'name grade' 'programms more';
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+  padding: 0 0 0 20px;
+}
+.recommendation__city {
+  grid-area: city;
+}
+.recommendation__name {
+  grid-area: name;
+  margin: 10px 0 0 0;
+  font-size: 1.5rem;
+}
+.recommendation__programs {
+  grid-area: programms;
+  max-width: 450px;
+  margin: 10px 0 0 0;
+}
+.recommendation__grade-info {
+  grid-area: grade;
+  margin: 20px 0 0 0;
+  font-size: 1.5rem;
+}
+.grade-info__title {
+  margin: 0;
+}
+.grade-info__grade {
+  text-align: center;
+  margin: 5px auto 0;
+  max-width: 40px;
+  font-size: 2rem;
+}
+.cost__info {
+  margin: 0;
+  grid-area: cost;
+}
+.recommendation__btn_more {
+  grid-area: more;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+
+  height: 50px;
+  width: 150px;
+  align-self: flex-end;
+
+  color: white;
+  margin: 0 0 0 10px;
+
+  border-radius: 100px;
+  border: 0px;
+  cursor: pointer;
+  background-color: royalblue;
+}
+
+.recommendation__btn_more:hover {
+  background-color: #2b58de;
+  transition: 0.3s ease-out;
+}
+.recommendation__btn_more:active {
+  background-color: #214cce;
+  transition: 0.3s ease-out;
+}
+
+.recommendation__more {
+  margin: 40px 0 0 0;
+}
+.more__container {
+}
+.more__program {
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0 0 0;
+}
+.more__program:hover {
+  border: 1px solid black;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.program__heading {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.program__info {
+  margin: 10px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.program__item > p,
+h5 {
+  margin: 0 0 10px 0;
+}

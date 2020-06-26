@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  padding: 25px;
+  width: 720px;
+  box-sizing: border-box;
+}
+
+.navbar__link {
+  color: aliceblue;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding-right: 20px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.navbar__button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+
+  color: black;
+  padding: 10px 20px;
+  margin: 0 0 0 10px;
+
+  border-radius: 100px;
+  border: 0px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.navbar__button:hover {
+  background-color: #DCDCDC ;
+  transition: .3s ease-out;
+}
+.navbar__button:active {
+  background-color: #C0C0C0 ;
+  transition: .3s ease-out;
+}
